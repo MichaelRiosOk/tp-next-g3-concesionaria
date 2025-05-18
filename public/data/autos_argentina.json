@@ -7,7 +7,7 @@
     "anioFabricacion": 2016,
     "tipoVehiculo": "Sedán",
     "kilometraje": 147141,
-    "img": "/Users/michaelrios/Documents/ORT/PNT2/Repo/tp-next-g3-concesionaria/public/img/589483.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/589483.webp"
   },
   {
     "id": 2,
