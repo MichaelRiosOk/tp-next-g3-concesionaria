@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "marca": "Volkswagen",
+    "modelo": "Amarok",
+    "version": "Zen",
+    "anioFabricacion": 2016,
+    "tipoVehiculo": "Sedán",
+    "kilometraje": 147141
+  },
+  {
+    "id": 2,
+    "marca": "Chevrolet",
+    "modelo": "Cruze",
+    "version": "XLi",
+    "anioFabricacion": 2018,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 11300
+  },
+  {
+    "id": 3,
+    "marca": "Ford",
+    "modelo": "Focus",
+    "version": "Full",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "Auto",
+    "kilometraje": 133982
+  },
+  {
+    "id": 4,
+    "marca": "Peugeot",
+    "modelo": "208",
+    "version": "Exclusive",
+    "anioFabricacion": 2020,
+    "tipoVehiculo": "SUV",
+    "kilometraje": 21756
+  },
+  {
+    "id": 5,
+    "marca": "Renault",
+    "modelo": "Duster",
+    "version": "Base",
+    "anioFabricacion": 2017,
+    "tipoVehiculo": "Hatchback",
+    "kilometraje": 157419
+  },
+  {
+    "id": 6,
+    "marca": "Volkswagen",
+    "modelo": "Amarok",
+    "version": "Zen",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "Sedán",
+    "kilometraje": 171549
+  },
+  {
+    "id": 7,
+    "marca": "Peugeot",
+    "modelo": "2008",
+    "version": "SE",
+    "anioFabricacion": 2016,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 14977
+  },
+  {
+    "id": 8,
+    "marca": "Peugeot",
+    "modelo": "208",
+    "version": "Exclusive",
+    "anioFabricacion": 2021,
+    "tipoVehiculo": "Pick-up",
+    "kilometraje": 92355
+  },
+  {
+    "id": 9,
+    "marca": "Ford",
+    "modelo": "Ranger",
+    "version": "Pack Look",
+    "anioFabricacion": 2019,
+    "tipoVehiculo": "Auto",
+    "kilometraje": 113909
+  },
+  {
+    "id": 10,
+    "marca": "Renault",
+    "modelo": "Kangoo",
+    "version": "SE",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 47338
+  },
+  {
+    "id": 11,
+    "marca": "Toyota",
+    "modelo": "Yaris",
+    "version": "XLi",
+    "anioFabricacion": 2023,
+    "tipoVehiculo": "Hatchback",
+    "kilometraje": 102762
+  },
+  {
+    "id": 12,
+    "marca": "Volkswagen",
+    "modelo": "Gol",
+    "version": "Pack Look",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 52468
+  },
+  {
+    "id": 13,
+    "marca": "Chevrolet",
+    "modelo": "Onix",
+    "version": "Pack Look",
+    "anioFabricacion": 2020,
+    "tipoVehiculo": "SUV",
+    "kilometraje": 76532
+  },
+  {
+    "id": 14,
+    "marca": "Peugeot",
+    "modelo": "208",
+    "version": "SE",
+    "anioFabricacion": 2018,
+    "tipoVehiculo": "Sedán",
+    "kilometraje": 55234
+  },
+  {
+    "id": 15,
+    "marca": "Toyota",
+    "modelo": "Yaris",
+    "version": "Base",
+    "anioFabricacion": 2020,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 101621
+  },
+  {
+    "id": 16,
+    "marca": "Chevrolet",
+    "modelo": "S10",
+    "version": "Zen",
+    "anioFabricacion": 2018,
+    "tipoVehiculo": "Auto",
+    "kilometraje": 112240
+  },
+  {
+    "id": 17,
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "version": "Pack Look",
+    "anioFabricacion": 2019,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 165604
+  },
+  {
+    "id": 18,
+    "marca": "Toyota",
+    "modelo": "Hilux",
+    "version": "Exclusive",
+    "anioFabricacion": 2016,
+    "tipoVehiculo": "Pick-up",
+    "kilometraje": 88425
+  },
+  {
+    "id": 19,
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "version": "Base",
+    "anioFabricacion": 2023,
+    "tipoVehiculo": "Auto",
+    "kilometraje": 22084
+  },
+  {
+    "id": 20,
+    "marca": "Toyota",
+    "modelo": "Yaris",
+    "version": "Full",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "SUV",
+    "kilometraje": 51495
+  }
+]

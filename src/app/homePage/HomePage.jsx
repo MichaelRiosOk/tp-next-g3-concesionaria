@@ -17,10 +17,6 @@ export default function HomePage() {
           className="main-image"
         />
       </div>
-
-      <footer className="footer">
-        © 2025 Concesionaria PNT2 - Todos los derechos reservados
-      </footer>
     </main>
   );
 }
