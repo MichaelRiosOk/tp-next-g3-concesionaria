@@ -15,7 +15,7 @@ export default function Product({ product }) {
         <img 
           src={product.img} 
           alt={product.modelo} 
-          className="w-full h-[135px] object-cover rounded-md"
+          className="w-full h-[135px] object-contain rounded-md"
           onError={handleImageError}
         />
       ) : (
