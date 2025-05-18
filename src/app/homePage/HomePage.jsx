@@ -1,6 +1,7 @@
 // app/page.jsx
 import React from "react";
 import "./homePage.css"; // Importamos los estilos
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -16,7 +17,9 @@ export default function HomePage() {
           alt="Auto principal de la concesionaria"
           className="main-image"
         />
+        <Link href="/products">Ver Autos</Link>
       </div>
+      <div className="subtitle"><Link href="/products">Ver Autos</Link></div>
     </main>
   );
 }

@@ -6,7 +6,8 @@
     "version": "Zen",
     "anioFabricacion": 2016,
     "tipoVehiculo": "Sedán",
-    "kilometraje": 147141
+    "kilometraje": 147141,
+    "img": "/Users/michaelrios/Documents/ORT/PNT2/Repo/tp-next-g3-concesionaria/public/img/589483.webp"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "version": "XLi",
     "anioFabricacion": 2018,
     "tipoVehiculo": "Furgón",
-    "kilometraje": 11300
+    "kilometraje": 11300,
+    "img": ""
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "version": "Full",
     "anioFabricacion": 2022,
     "tipoVehiculo": "Auto",
-    "kilometraje": 133982
+    "kilometraje": 133982,
+    "img": ""
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "version": "Exclusive",
     "anioFabricacion": 2020,
     "tipoVehiculo": "SUV",
-    "kilometraje": 21756
+    "kilometraje": 21756,
+    "img": ""
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "version": "Base",
     "anioFabricacion": 2017,
     "tipoVehiculo": "Hatchback",
-    "kilometraje": 157419
+    "kilometraje": 157419,
+    "img": ""
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "version": "Zen",
     "anioFabricacion": 2022,
     "tipoVehiculo": "Sedán",
-    "kilometraje": 171549
+    "kilometraje": 171549,
+    "img": ""
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "version": "SE",
     "anioFabricacion": 2016,
     "tipoVehiculo": "Furgón",
-    "kilometraje": 14977
+    "kilometraje": 14977,
+    "img": ""
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "version": "Exclusive",
     "anioFabricacion": 2021,
     "tipoVehiculo": "Pick-up",
-    "kilometraje": 92355
+    "kilometraje": 92355,
+    "img": ""
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "version": "Pack Look",
     "anioFabricacion": 2019,
     "tipoVehiculo": "Auto",
-    "kilometraje": 113909
+    "kilometraje": 113909,
+    "img": ""
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "version": "SE",
     "anioFabricacion": 2022,
     "tipoVehiculo": "Furgón",
-    "kilometraje": 47338
+    "kilometraje": 47338,
+    "img": ""
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "version": "XLi",
     "anioFabricacion": 2023,
     "tipoVehiculo": "Hatchback",
-    "kilometraje": 102762
+    "kilometraje": 102762,
+    "img": ""
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "version": "Pack Look",
     "anioFabricacion": 2022,
     "tipoVehiculo": "Furgón",
-    "kilometraje": 52468
+    "kilometraje": 52468,
+    "img": ""
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "version": "Pack Look",
     "anioFabricacion": 2020,
     "tipoVehiculo": "SUV",
-    "kilometraje": 76532
+    "kilometraje": 76532,
+    "img": ""
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "version": "SE",
     "anioFabricacion": 2018,
     "tipoVehiculo": "Sedán",
-    "kilometraje": 55234
+    "kilometraje": 55234,
+    "img": ""
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@
     "version": "Base",
     "anioFabricacion": 2020,
     "tipoVehiculo": "Furgón",
-    "kilometraje": 101621
+    "kilometraje": 101621,
+    "img": ""
   },
   {
     "id": 16,
@@ -141,7 +156,8 @@
     "version": "Zen",
     "anioFabricacion": 2018,
     "tipoVehiculo": "Auto",
-    "kilometraje": 112240
+    "kilometraje": 112240,
+    "img": ""
   },
   {
     "id": 17,
@@ -150,7 +166,8 @@
     "version": "Pack Look",
     "anioFabricacion": 2019,
     "tipoVehiculo": "Furgón",
-    "kilometraje": 165604
+    "kilometraje": 165604,
+    "img": ""
   },
   {
     "id": 18,
@@ -159,7 +176,8 @@
     "version": "Exclusive",
     "anioFabricacion": 2016,
     "tipoVehiculo": "Pick-up",
-    "kilometraje": 88425
+    "kilometraje": 88425,
+    "img": ""
   },
   {
     "id": 19,
@@ -168,7 +186,8 @@
     "version": "Base",
     "anioFabricacion": 2023,
     "tipoVehiculo": "Auto",
-    "kilometraje": 22084
+    "kilometraje": 22084,
+    "img": ""
   },
   {
     "id": 20,
@@ -177,6 +196,7 @@
     "version": "Full",
     "anioFabricacion": 2022,
     "tipoVehiculo": "SUV",
-    "kilometraje": 51495
+    "kilometraje": 51495,
+    "img": ""
   }
 ]

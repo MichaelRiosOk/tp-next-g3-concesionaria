@@ -1,36 +1,36 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import MovieList from './MovieList';
+import ProductList from './ProductList';
 
 export default function Home() {
-  const [movies, setMovies] = useState([]);
+  const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function fetchMovies() {
+    async function fetchProducts() {
       try {
-        const response = await fetch(`https://mflixbackend.azurewebsites.net/api/movies?pageSize=20&page=${page}`);
+        const response = await fetch(`https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/data/autos_argentina.json`);
         const data = await response.json();
-        setMovies(data);
+        setProducts(data);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching movies:', error);
+        console.error('Error fetching products:', error);
         setLoading(false);
       }
     }
 
-    fetchMovies();
+    fetchProducts();
   }, [page]);
 
   return (
     <main className="container mx-auto p-4">      
       {loading ? (
-        <p>Cargando películas...</p>
+        <p>Cargando productos...</p>
       ) : (
         <>
-          <MovieList movies={movies} />
+          <ProductList products={products} />
           <div className="flex justify-center items-center mt-4 space-x-4">
             <button 
               onClick={() => setPage(prev => prev > 1 ? prev - 1 : 1)} 
