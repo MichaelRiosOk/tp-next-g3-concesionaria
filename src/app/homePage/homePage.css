@@ -1,0 +1,49 @@
+/* app/page.css */
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-size: 48px;
+    color: #003366;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    color: #555555;
+    margin-top: 10px;
+  }
+  
+  .image-container {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .footer {
+    margin-top: auto;
+    font-size: 14px;
+    color: #888888;
+    text-align: center;
+  }
+  

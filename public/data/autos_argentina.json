@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "marca": "Volkswagen",
+    "modelo": "Amarok",
+    "version": "Zen",
+    "anioFabricacion": 2016,
+    "tipoVehiculo": "Sedán",
+    "kilometraje": 147141,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/589483.webp"
+  },
+  {
+    "id": 2,
+    "marca": "Chevrolet",
+    "modelo": "Cruze",
+    "version": "XLi",
+    "anioFabricacion": 2018,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 11300,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletCruze.webp"
+  },
+  {
+    "id": 3,
+    "marca": "Ford",
+    "modelo": "Focus",
+    "version": "Full",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "Auto",
+    "kilometraje": 133982,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordFocus.webp"
+  },
+  {
+    "id": 4,
+    "marca": "Peugeot",
+    "modelo": "208",
+    "version": "Exclusive",
+    "anioFabricacion": 2020,
+    "tipoVehiculo": "SUV",
+    "kilometraje": 21756,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/208Sedan.webp"
+  },
+  {
+    "id": 5,
+    "marca": "Renault",
+    "modelo": "Duster",
+    "version": "Base",
+    "anioFabricacion": 2017,
+    "tipoVehiculo": "Hatchback",
+    "kilometraje": 157419,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/renaultDusterBase.webp"
+  },
+  {
+    "id": 6,
+    "marca": "Volkswagen",
+    "modelo": "Amarok",
+    "version": "Zen",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "Sedán",
+    "kilometraje": 171549,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/amarokZen.webp"
+  },
+  {
+    "id": 7,
+    "marca": "Peugeot",
+    "modelo": "2008",
+    "version": "SE",
+    "anioFabricacion": 2016,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 14977,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot2008SE.webp"
+  },
+  {
+    "id": 8,
+    "marca": "Peugeot",
+    "modelo": "208",
+    "version": "Exclusive",
+    "anioFabricacion": 2021,
+    "tipoVehiculo": "Pick-up",
+    "kilometraje": 92355,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Ex.webp"
+  },
+  {
+    "id": 9,
+    "marca": "Ford",
+    "modelo": "Ranger",
+    "version": "Pack Look",
+    "anioFabricacion": 2019,
+    "tipoVehiculo": "Auto",
+    "kilometraje": 113909,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordRanger.webp"
+  },
+  {
+    "id": 10,
+    "marca": "Renault",
+    "modelo": "Kangoo",
+    "version": "SE",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 47338,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/renaultKangooSE.webp"
+  },
+  {
+    "id": 11,
+    "marca": "Toyota",
+    "modelo": "Yaris",
+    "version": "XLi",
+    "anioFabricacion": 2023,
+    "tipoVehiculo": "Hatchback",
+    "kilometraje": 102762,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaYarisBase.webp"
+  },
+  {
+    "id": 12,
+    "marca": "Volkswagen",
+    "modelo": "Gol",
+    "version": "Pack Look",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 52468,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/VWGol.webp"
+  },
+  {
+    "id": 13,
+    "marca": "Chevrolet",
+    "modelo": "Onix",
+    "version": "Pack Look",
+    "anioFabricacion": 2020,
+    "tipoVehiculo": "SUV",
+    "kilometraje": 76532,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletOnix.webp"
+  },
+  {
+    "id": 14,
+    "marca": "Peugeot",
+    "modelo": "208",
+    "version": "SE",
+    "anioFabricacion": 2018,
+    "tipoVehiculo": "Sedán",
+    "kilometraje": 55234,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Exclusive.webp"
+  },
+  {
+    "id": 15,
+    "marca": "Toyota",
+    "modelo": "Yaris",
+    "version": "Base",
+    "anioFabricacion": 2020,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 101621,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/yaris.webp"
+  },
+  {
+    "id": 16,
+    "marca": "Chevrolet",
+    "modelo": "S10",
+    "version": "Zen",
+    "anioFabricacion": 2018,
+    "tipoVehiculo": "Auto",
+    "kilometraje": 112240,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevrolets10.webp"
+  },
+  {
+    "id": 17,
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "version": "Pack Look",
+    "anioFabricacion": 2019,
+    "tipoVehiculo": "Furgón",
+    "kilometraje": 165604,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/corolla.webp"
+  },
+  {
+    "id": 18,
+    "marca": "Toyota",
+    "modelo": "Hilux",
+    "version": "Exclusive",
+    "anioFabricacion": 2016,
+    "tipoVehiculo": "Pick-up",
+    "kilometraje": 88425,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaHilux.webp"
+  },
+  {
+    "id": 19,
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "version": "Base",
+    "anioFabricacion": 2023,
+    "tipoVehiculo": "Auto",
+    "kilometraje": 22084,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotacorolla.webp"
+  },
+  {
+    "id": 20,
+    "marca": "Toyota",
+    "modelo": "Yaris",
+    "version": "Full",
+    "anioFabricacion": 2022,
+    "tipoVehiculo": "SUV",
+    "kilometraje": 51495,
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/ToyotaYarisSE.webp"
+  }
+]
