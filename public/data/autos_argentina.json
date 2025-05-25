@@ -27,7 +27,7 @@
     "anioFabricacion": 2022,
     "tipoVehiculo": "Auto",
     "kilometraje": 133982,
-    "img": "https://github.com/MichaelRiosOk/tp-next-g3-concesionaria/blob/develop-mike/public/img/fordFocus.jpg"
+    "img": "https://raw.github.com/MichaelRiosOk/tp-next-g3-concesionaria/blob/develop-mike/public/img/fordFocus.jpg"
   },
   {
     "id": 4,
@@ -127,7 +127,7 @@
     "anioFabricacion": 2020,
     "tipoVehiculo": "SUV",
     "kilometraje": 76532,
-    "img": ""
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletOnix.webp"
   },
   {
     "id": 14,
