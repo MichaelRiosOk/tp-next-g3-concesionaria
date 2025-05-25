@@ -17,7 +17,7 @@
     "anioFabricacion": 2018,
     "tipoVehiculo": "Furgón",
     "kilometraje": 11300,
-    "img": ""
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletCruze.webp"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "anioFabricacion": 2022,
     "tipoVehiculo": "Auto",
     "kilometraje": 133982,
-    "img": ""
+    "img": "https://github.com/MichaelRiosOk/tp-next-g3-concesionaria/blob/develop-mike/public/img/fordFocus.jpg"
   },
   {
     "id": 4,
