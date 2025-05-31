@@ -29,7 +29,7 @@ export default function Header() {
             isOpen ? 'block' : 'hidden'
           } md:flex md:items-center md:space-x-4`}
         >
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="/" className="text-white hover:text-gray-300">
             Home
           </a>
           <a href="#" className="text-white hover:text-gray-300">
