@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch(`https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/data/autos_argentina.json`);
+        const response = await fetch(`https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/develop-mike/public/data/autos_argentina.json`); 
         const data = await response.json();
         setProducts(data);
         setLoading(false);
