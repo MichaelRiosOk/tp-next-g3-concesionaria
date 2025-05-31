@@ -34,6 +34,7 @@ export default function PageDetails({ params }) {
                 <p><span className="font-semibold">Año de fabricación:</span> {product.anioFabricacion}</p>
                 <p><span className="font-semibold">Tipo de vehículo:</span> {product.tipoVehiculo}</p>
                 <p><span className="font-semibold">Kilometraje:</span> {product.kilometraje.toLocaleString()} km</p>
+                <p><span className="font-semibold">Precio:</span> {product.precio.toLocaleString()} USD</p>
             </div>
 
             {/* Botón de comprar */}

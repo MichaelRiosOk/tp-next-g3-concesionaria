@@ -8,7 +8,8 @@
     "tipoVehiculo": "Sedán",
     "kilometraje": 147141,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/589483.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 16500
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "tipoVehiculo": "Furgón",
     "kilometraje": 11300,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletCruze.webp",
-    "disponible": false
+    "disponible": false,
+    "precio": 17000
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "tipoVehiculo": "Auto",
     "kilometraje": 133982,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordFocus.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 14500
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "tipoVehiculo": "SUV",
     "kilometraje": 21756,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/208Sedan.webp",
-    "disponible": false
+    "disponible": false,
+    "precio": 16000
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "tipoVehiculo": "Hatchback",
     "kilometraje": 157419,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/renaultDusterBase.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 12800
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "tipoVehiculo": "Sedán",
     "kilometraje": 171549,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/amarokZen.webp",
-    "disponible": false
+    "disponible": false,
+    "precio": 28000
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "tipoVehiculo": "Furgón",
     "kilometraje": 14977,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot2008SE.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 13500
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "tipoVehiculo": "Pick-up",
     "kilometraje": 92355,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Ex.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 17500
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "tipoVehiculo": "Auto",
     "kilometraje": 113909,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordRanger.webp",
-    "disponible": false
+    "disponible": false,
+    "precio": 24000
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "tipoVehiculo": "Furgón",
     "kilometraje": 47338,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/renaultKangooSE.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 17000
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "tipoVehiculo": "Hatchback",
     "kilometraje": 102762,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaYarisBase.webp",
-    "disponible": false
+    "disponible": false,
+    "precio": 21500
   },
   {
     "id": 12,
@@ -129,7 +140,8 @@
     "tipoVehiculo": "Furgón",
     "kilometraje": 52468,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/VWGol.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 14000
   },
   {
     "id": 13,
@@ -140,7 +152,8 @@
     "tipoVehiculo": "SUV",
     "kilometraje": 76532,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletOnix.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 15000
   },
   {
     "id": 14,
@@ -151,7 +164,8 @@
     "tipoVehiculo": "Sedán",
     "kilometraje": 55234,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Exclusive.webp",
-    "disponible": false
+    "disponible": false,
+    "precio": 13000
   },
   {
     "id": 15,
@@ -162,7 +176,8 @@
     "tipoVehiculo": "Furgón",
     "kilometraje": 101621,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/yaris.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 15500
   },
   {
     "id": 16,
@@ -173,7 +188,8 @@
     "tipoVehiculo": "Auto",
     "kilometraje": 112240,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevrolets10.webp",
-    "disponible": false
+    "disponible": false,
+    "precio": 21000
   },
   {
     "id": 17,
@@ -184,7 +200,8 @@
     "tipoVehiculo": "Furgón",
     "kilometraje": 165604,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/corolla.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 17000
   },
   {
     "id": 18,
@@ -195,7 +212,8 @@
     "tipoVehiculo": "Pick-up",
     "kilometraje": 88425,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaHilux.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 24500
   },
   {
     "id": 19,
@@ -206,7 +224,8 @@
     "tipoVehiculo": "Auto",
     "kilometraje": 22084,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotacorolla.webp",
-    "disponible": false
+    "disponible": false,
+    "precio": 25000
   },
   {
     "id": 20,
@@ -217,6 +236,7 @@
     "tipoVehiculo": "SUV",
     "kilometraje": 51495,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/ToyotaYarisSE.webp",
-    "disponible": true
+    "disponible": true,
+    "precio": 18500
   }
 ]

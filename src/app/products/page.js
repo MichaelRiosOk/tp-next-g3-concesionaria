@@ -30,7 +30,7 @@ export default function Home() {
         <p>Cargando productos...</p>
       ) : (
         <>
-          <ProductList products={products.filter(product => product.disponible)} />
+          <ProductList products={products} />
           <div className="flex justify-center items-center mt-4 space-x-4">
             <button 
               onClick={() => setPage(prev => prev > 1 ? prev - 1 : 1)} 
