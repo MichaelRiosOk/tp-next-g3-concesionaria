@@ -7,7 +7,8 @@
     "anioFabricacion": 2016,
     "tipoVehiculo": "Sedán",
     "kilometraje": 147141,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/589483.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/589483.webp",
+    "disponible": true
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "anioFabricacion": 2018,
     "tipoVehiculo": "Furgón",
     "kilometraje": 11300,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletCruze.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletCruze.webp",
+    "disponible": false
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "anioFabricacion": 2022,
     "tipoVehiculo": "Auto",
     "kilometraje": 133982,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordFocus.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordFocus.webp",
+    "disponible": true
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "anioFabricacion": 2020,
     "tipoVehiculo": "SUV",
     "kilometraje": 21756,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/208Sedan.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/208Sedan.webp",
+    "disponible": false
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "anioFabricacion": 2017,
     "tipoVehiculo": "Hatchback",
     "kilometraje": 157419,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/renaultDusterBase.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/renaultDusterBase.webp",
+    "disponible": true
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "anioFabricacion": 2022,
     "tipoVehiculo": "Sedán",
     "kilometraje": 171549,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/amarokZen.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/amarokZen.webp",
+    "disponible": false
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "anioFabricacion": 2016,
     "tipoVehiculo": "Furgón",
     "kilometraje": 14977,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot2008SE.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot2008SE.webp",
+    "disponible": true
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "anioFabricacion": 2021,
     "tipoVehiculo": "Pick-up",
     "kilometraje": 92355,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Ex.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Ex.webp",
+    "disponible": true
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "anioFabricacion": 2019,
     "tipoVehiculo": "Auto",
     "kilometraje": 113909,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordRanger.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordRanger.webp",
+    "disponible": false
   },
   {
     "id": 10,
@@ -97,7 +106,8 @@
     "anioFabricacion": 2022,
     "tipoVehiculo": "Furgón",
     "kilometraje": 47338,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/renaultKangooSE.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/renaultKangooSE.webp",
+    "disponible": true
   },
   {
     "id": 11,
@@ -107,7 +117,8 @@
     "anioFabricacion": 2023,
     "tipoVehiculo": "Hatchback",
     "kilometraje": 102762,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaYarisBase.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaYarisBase.webp",
+    "disponible": false
   },
   {
     "id": 12,
@@ -117,7 +128,8 @@
     "anioFabricacion": 2022,
     "tipoVehiculo": "Furgón",
     "kilometraje": 52468,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/VWGol.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/VWGol.webp",
+    "disponible": true
   },
   {
     "id": 13,
@@ -127,7 +139,8 @@
     "anioFabricacion": 2020,
     "tipoVehiculo": "SUV",
     "kilometraje": 76532,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletOnix.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletOnix.webp",
+    "disponible": true
   },
   {
     "id": 14,
@@ -137,7 +150,8 @@
     "anioFabricacion": 2018,
     "tipoVehiculo": "Sedán",
     "kilometraje": 55234,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Exclusive.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Exclusive.webp",
+    "disponible": false
   },
   {
     "id": 15,
@@ -147,7 +161,8 @@
     "anioFabricacion": 2020,
     "tipoVehiculo": "Furgón",
     "kilometraje": 101621,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/yaris.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/yaris.webp",
+    "disponible": true
   },
   {
     "id": 16,
@@ -157,7 +172,8 @@
     "anioFabricacion": 2018,
     "tipoVehiculo": "Auto",
     "kilometraje": 112240,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevrolets10.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevrolets10.webp",
+    "disponible": false
   },
   {
     "id": 17,
@@ -167,7 +183,8 @@
     "anioFabricacion": 2019,
     "tipoVehiculo": "Furgón",
     "kilometraje": 165604,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/corolla.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/corolla.webp",
+    "disponible": true
   },
   {
     "id": 18,
@@ -177,7 +194,8 @@
     "anioFabricacion": 2016,
     "tipoVehiculo": "Pick-up",
     "kilometraje": 88425,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaHilux.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaHilux.webp",
+    "disponible": true
   },
   {
     "id": 19,
@@ -187,7 +205,8 @@
     "anioFabricacion": 2023,
     "tipoVehiculo": "Auto",
     "kilometraje": 22084,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotacorolla.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotacorolla.webp",
+    "disponible": false
   },
   {
     "id": 20,
@@ -197,6 +216,7 @@
     "anioFabricacion": 2022,
     "tipoVehiculo": "SUV",
     "kilometraje": 51495,
-    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/ToyotaYarisSE.webp"
+    "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/ToyotaYarisSE.webp",
+    "disponible": true
   }
 ]
