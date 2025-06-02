@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 function Cabecera(props) {
-  // TODO: Agregar Carrito con un contador, este contador se va incrementar cada vez que se presione
-  // el boton Comprar
   return (
     <header className="cabecera">
       <div className="cabecera__logo">
@@ -18,12 +16,12 @@ function Cabecera(props) {
         <a href="/contacto">Contacto</a>
       </nav>
       <div className="cabecera__acciones">
+        <a href="/login" className="cabecera__login">
+          <img src="img/loginIcono.png" alt="Login" />
+        </a>
         <div className="cabecera__carrito">
           <FontAwesomeIcon icon={faShoppingCart} />
           <span className="carrito__contador">{props.carrito}</span>
-        </div>
-        <div className="cabecera__usuario">
-          <img src="/img/userProfileIcon.jpg" alt="Usuario logueado" />
         </div>
       </div>
     </header>
