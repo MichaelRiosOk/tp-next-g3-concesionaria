@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <Cabecera carrito={0} />
       <HomePage />
     </>
   );
