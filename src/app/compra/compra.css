@@ -1,0 +1,87 @@
+.contenedor-compra {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #ffffff;
+    padding: 80px 30px;
+    gap: 20px;
+}
+
+.mensaje-compra {
+    font-size: 22px;
+    color: #1a3a51;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.compra-exitosa {
+    color: #acc7b4; /* verde claro para éxito */
+}
+
+.imagen-auto-compra {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(63, 92, 109, 0.2);
+}
+
+.detalle-compra {
+    color: #3f5c6d;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    background-color: #f2e9da;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(26, 58, 81, 0.1);
+}
+
+.finalizar-boton {
+    background-color: #1a3a51;
+    color: #f2e9da;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.finalizar-boton:hover {
+    background-color: #3f5c6d;
+}
+
+.detalle-auto {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.marca-modelo {
+    font-size: 18px;
+    color: #3f5c6d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modelo-nombre {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a3a51;
+}
+
+.etiqueta {
+    font-weight: bold;
+    color: #1a3a51;
+}
+
+.valor {
+    font-weight: normal;
+    color: #3f5c6d;
+    margin-left: 5px;
+}

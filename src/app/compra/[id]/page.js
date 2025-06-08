@@ -20,15 +20,15 @@ export default function PageCompra({ params }) {
         return <div className="text-center text-gray-500 mt-10">Cargando datos del auto...</div>;
     }
 
-    const message = (comprado) ? "Usted compró este auto." : "Usted esta por comprar este auto.";
+    const message = (comprado) ? "USTED COMPRO ESTE AUTO" : "USTED ESTA POR COMPRAR ESTE AUTO";
 
     return (
-        <div>
+        <div className="contenedor-compra">
             {car ? (
                 <>
-                    <Compra auto={car} mensaje={message}></Compra>
+                    <Compra auto={car} mensaje={message} comprado={comprado} ></Compra>
                     {!comprado && (
-                        <button onClick={() => setComprado(true)}>Finalizar compra</button>
+                        <button className="finalizar-boton" onClick={() => setComprado(true)}>FINALIZAR COMPRA</button>
                     )}
                 </>
             ) : (
