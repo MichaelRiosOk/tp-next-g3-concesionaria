@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, use } from "react";
+import Link from 'next/link';
 
 export default function PageDetails({ params }) {
     const { id } = use(params);
@@ -38,12 +39,12 @@ export default function PageDetails({ params }) {
             </div>
 
             {/* Botón de comprar */}
+            <Link href={`/compra/${id}`}>
             <button
-                className="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold text-lg hover:bg-blue-700 transition duration-300 shadow-md"
-                onClick={() => alert("¡Gracias por tu interés! Pronto nos contactaremos.")}
-            >
+                className="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold text-lg hover:bg-blue-700 transition duration-300 shadow-md">
                 Comprar
             </button>
+            </Link>
         </div>
     );
 }
