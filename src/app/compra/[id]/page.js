@@ -22,13 +22,20 @@ export default function PageCompra({ params }) {
 
     const message = (comprado) ? "USTED COMPRO ESTE AUTO" : "USTED ESTA POR COMPRAR ESTE AUTO";
 
+    const finalizarCompra = () =>{
+        setComprado(true);
+        setCar((previousCar) => ({
+            ...previousCar,
+            disponible: false
+        }));
+    }
     return (
         <div className="contenedor-compra">
             {car ? (
                 <>
                     <Compra auto={car} mensaje={message} comprado={comprado} ></Compra>
                     {!comprado && (
-                        <button className="finalizar-boton" onClick={() => setComprado(true)}>FINALIZAR COMPRA</button>
+                        <button className="finalizar-boton" onClick={finalizarCompra}>FINALIZAR COMPRA</button>
                     )}
                 </>
             ) : (
