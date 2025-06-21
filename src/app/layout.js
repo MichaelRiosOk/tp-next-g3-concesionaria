@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AutosProvider } from "../context/AutosContext";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import PieDePagina from "./pie/PieDePagina";
+import Cabecera from "./cabecera/Cabecera";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       <AutosProvider>
-        <Header />
+        <Cabecera />
         {children}
-        <Footer />
+        <PieDePagina />
       </AutosProvider>
       </body>
     </html>

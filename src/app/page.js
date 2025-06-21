@@ -1,9 +1,7 @@
 import Image from "next/image";
-import Cabecera from "./cabecera/Cabecera";
-import Pie from "./pie/PieDePagina";
 import HomePage from "./homePage/HomePage";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import PieDePagina from "./pie/PieDePagina";
+import Cabecera from "./cabecera/Cabecera";
 
 export default function Home() {
   return (
