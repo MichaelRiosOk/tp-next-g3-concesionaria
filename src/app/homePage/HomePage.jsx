@@ -11,15 +11,20 @@ export default function HomePage() {
         <p className="subtitle">Tu próximo auto te espera</p>
       </header>
 
+      <div className="ver-autos-wrapper">
+        <Link href="/products" className="view-autos-link">
+          Ver Autos
+        </Link>
+      </div>
+
       <div className="image-container">
         <img
           src="/img/logoConcesionaria.png" 
           alt="Auto principal de la concesionaria"
           className="main-image"
         />
-        <Link href="/products">Ver Autos</Link>
       </div>
-      <div className="subtitle"><Link href="/products">Ver Autos</Link></div>
+    
     </main>
   );
 }

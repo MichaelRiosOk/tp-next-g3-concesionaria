@@ -1,47 +1,48 @@
-"use client";
-import { useState, useEffect,use } from "react";
-import Compra from "../Compra";
+'use client';
+
+import { useContext, useEffect, useState, use } from 'react';
+import { AutosContext } from '../../../context/AutosContext';
+import Compra from '../Compra';
 
 export default function PageCompra({ params }) {
-    const { id } = use(params);
-    const [car, setCar] = useState(null);
-    const [comprado, setComprado] = useState(false);
+  const { autos, actualizarAuto } = useContext(AutosContext);
+  const [car, setCar] = useState(null);
+  const [comprado, setComprado] = useState(false);
 
-    useEffect(() => {
-        fetch("https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/data/autos_argentina.json")
-            .then((response) => response.json())
-            .then((data) => {
-                setCar(data.find((c) => c["id"] == id));
-            })
-            .catch((err) => console.log(err));
-    }, []);
+  const { id } = use(params); // ✅ usa React.use() para resolver la Promise
 
-    if (!car) {
-        return <div className="text-center text-gray-500 mt-10">Cargando datos del auto...</div>;
+  useEffect(() => {
+    const autoEncontrado = autos.find((a) => a.id == id);
+    if (autoEncontrado) {
+      setCar(autoEncontrado);
     }
+  }, [autos, id]);
 
-    const message = (comprado) ? "USTED COMPRO ESTE AUTO" : "USTED ESTA POR COMPRAR ESTE AUTO";
+  const finalizarCompra = () => {
+    setComprado(true);
+    actualizarAuto(id, { disponible: false });
+  };
 
-    const finalizarCompra = () =>{
-        setComprado(true);
-        setCar((previousCar) => ({
-            ...previousCar,
-            disponible: false
-        }));
-    }
+  if (!car) {
     return (
-        <div className="contenedor-compra">
-            {car ? (
-                <>
-                    <Compra auto={car} mensaje={message} comprado={comprado} ></Compra>
-                    {!comprado && (
-                        <button className="finalizar-boton" onClick={finalizarCompra}>FINALIZAR COMPRA</button>
-                    )}
-                </>
-            ) : (
-                <p>Cargando auto...</p>
-            )}
-        </div >
-    )
+      <div className="text-center text-gray-500 mt-10">
+        Cargando datos del auto...
+      </div>
+    );
+  }
 
+  const message = comprado
+    ? 'USTED COMPRÓ ESTE AUTO'
+    : 'USTED ESTÁ POR COMPRAR ESTE AUTO';
+
+  return (
+    <div className="contenedor-compra">
+      <Compra auto={car} mensaje={message} comprado={comprado} />
+      {!comprado && (
+        <button className="finalizar-boton" onClick={finalizarCompra}>
+          FINALIZAR COMPRA
+        </button>
+      )}
+    </div>
+  );
 }

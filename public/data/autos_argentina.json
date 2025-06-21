@@ -20,7 +20,7 @@
     "tipoVehiculo": "Furgón",
     "kilometraje": 11300,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevroletCruze.webp",
-    "disponible": false,
+    "disponible": true,
     "precio": 17000
   },
   {
@@ -44,7 +44,7 @@
     "tipoVehiculo": "SUV",
     "kilometraje": 21756,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/208Sedan.webp",
-    "disponible": false,
+    "disponible": true,
     "precio": 16000
   },
   {
@@ -68,7 +68,7 @@
     "tipoVehiculo": "Sedán",
     "kilometraje": 171549,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/amarokZen.webp",
-    "disponible": false,
+    "disponible": true,
     "precio": 28000
   },
   {
@@ -104,7 +104,7 @@
     "tipoVehiculo": "Auto",
     "kilometraje": 113909,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/fordRanger.webp",
-    "disponible": false,
+    "disponible": true,
     "precio": 24000
   },
   {
@@ -128,7 +128,7 @@
     "tipoVehiculo": "Hatchback",
     "kilometraje": 102762,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotaYarisBase.webp",
-    "disponible": false,
+    "disponible": true,
     "precio": 21500
   },
   {
@@ -164,7 +164,7 @@
     "tipoVehiculo": "Sedán",
     "kilometraje": 55234,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/peugeot208Exclusive.webp",
-    "disponible": false,
+    "disponible": true,
     "precio": 13000
   },
   {
@@ -188,7 +188,7 @@
     "tipoVehiculo": "Auto",
     "kilometraje": 112240,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/chevrolets10.webp",
-    "disponible": false,
+    "disponible": true,
     "precio": 21000
   },
   {
@@ -224,7 +224,7 @@
     "tipoVehiculo": "Auto",
     "kilometraje": 22084,
     "img": "https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/img/toyotacorolla.webp",
-    "disponible": false,
+    "disponible": true,
     "precio": 25000
   },
   {

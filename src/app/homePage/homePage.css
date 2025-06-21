@@ -12,7 +12,7 @@
   
   .header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   
   .title {
@@ -31,7 +31,7 @@
     width: 100%;
     max-width: 500px;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
   .main-image {
@@ -46,4 +46,33 @@
     color: #888888;
     text-align: center;
   }
-  
+
+.main-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+}
+
+.ver-autos-wrapper {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.view-autos-link {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.view-autos-link:hover {
+  background-color: #1e40af;
+}
