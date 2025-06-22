@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Link from 'next/link';
+import "./cabecera.css";
 
 export default function Cabecera() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,14 +14,14 @@ export default function Cabecera() {
   };
 
   return (
-    <header className="bg-black p-4">
+    <header className="cabecera">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
-          <Link href="/" className="hover:opacity-80 transition-opacity">
-            <img src="/img/ortLogo.png" alt="Logo de la empresa" className="h-10" />
+        <div className="cabecera__logo">
+          <Link href="/">
+            <img src="/img/ortLogo.png" alt="Logo de la empresa" />
           </Link>
         </div>
-        
+
         <button
           className="md:hidden text-white focus:outline-none"
           onClick={toggleMenu}
@@ -28,34 +29,28 @@ export default function Cabecera() {
           <FontAwesomeIcon icon={isOpen ? faXmark : faBars} />
         </button>
 
-        <nav
-          className={`${
-            isOpen ? 'block' : 'hidden'
-          } md:flex md:items-center md:space-x-4`}
-        >
-          <Link href="/" className="text-white hover:text-gray-300">
+        <nav className={`${isOpen ? 'block' : 'hidden'} md:flex md:items-center md:space-x-4`}>
+          <Link href="/" className="cabecera__nav-link">
             Inicio
           </Link>
-          <a href="/mision" className="text-white hover:text-gray-300">
+          <a href="/mision" className="cabecera__nav-link">
             Mision
           </a>
-          <a href="/nosotros" className="text-white hover:text-gray-300">
+          <a href="/nosotros" className="cabecera__nav-link">
             Nosotros
           </a>
-          <a href="/contacto" className="text-white hover:text-gray-300">
+          <a href="/contacto" className="cabecera__nav-link">
             Contacto
           </a>
         </nav>
 
-        <div className="flex items-center space-x-4">
-          <a href="/login" className="text-white">
-            <img src="/img/loginIcono.png" alt="Login" className="h-6 w-6 invert" />
+        <div className="cabecera__acciones">
+          <a href="/login" className="cabecera__login">
+            <img src="/img/loginIcono.png" alt="Login" />
           </a>
-          <div className="relative">
-            <FontAwesomeIcon icon={faShoppingCart} className="text-white text-xl" />
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-              0
-            </span>
+          <div className="cabecera__carrito">
+            <FontAwesomeIcon icon={faShoppingCart} />
+            <span className="cabecera__carrito-contador">0</span>
           </div>
         </div>
       </div>

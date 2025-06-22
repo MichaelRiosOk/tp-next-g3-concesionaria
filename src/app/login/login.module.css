@@ -3,33 +3,55 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #F2E9DA;
+  background-color: #FFFFFF;
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 .loginBox {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
+  padding: 3rem 2rem;
+  border-left: 8px solid #ACC7B4;
+  color: #1A3A51;
+}
+
+.loginBox h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.loginBox h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background-color: #ACC7B4;
+  border-radius: 3px;
+  margin-top: 0.25rem;
 }
 
 .formGroup {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .formGroup label {
   display: block;
   margin-bottom: 0.5rem;
   color: #1A3A51;
+  font-weight: 600;
 }
 
 .formGroup input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   border: 1px solid #ACC7B4;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #F9F7F4;
+  color: #1A3A51;
 }
 
 .submitButton {
@@ -38,8 +60,12 @@
   background-color: #1A3A51;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
 }
 
 .submitButton:hover {
@@ -48,8 +74,9 @@
 
 .registerLink {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: #3F5C6D;
+  font-size: 0.95rem;
 }
 
 .registerLink a {

@@ -1,78 +1,67 @@
-/* app/page.css */
-
 .main-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
-  .title {
-    font-size: 48px;
-    color: #003366;
-    margin: 0;
-  }
-  
-  .subtitle {
-    font-size: 20px;
-    color: #555555;
-    margin-top: 10px;
-  }
-  
-  .image-container {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .main-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  .footer {
-    margin-top: auto;
-    font-size: 14px;
-    color: #888888;
-    text-align: center;
-  }
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 3.5rem; 
+  color: #1A3A51; 
+  margin: 0;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.25rem; 
+  color: #3F5C6D; 
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 250px;
+  margin: 40px 0;
+}
 
 .main-image {
   width: 100%;
-  max-width: 500px;
   height: auto;
-  margin: 1rem auto;
-  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(26, 58, 81, 0.15);
 }
 
 .ver-autos-wrapper {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
+  width: 100%;
 }
 
 .view-autos-link {
-  background-color: #1e3a8a;
-  color: white;
-  padding: 0.5rem 1.2rem;
-  border-radius: 0.5rem;
+  display: inline-block;
+  background-color: #1A3A51; 
+  color: #F2E9DA; 
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.75rem;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 8px rgba(26, 58, 81, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .view-autos-link:hover {
-  background-color: #1e40af;
-}
+  background-color: #3F5C6D; 
+  box-shadow: 0 6px 14px rgba(63, 92, 109, 0.5);
+} 

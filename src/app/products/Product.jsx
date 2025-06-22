@@ -9,24 +9,24 @@ export default function Product({ product }) {
   };
 
   return (
-    <div className="w-[90px] text-center">
+    <div className="product-card">
       <Link href={`/products/${product.id}`}>
       {product.marca && !imageError ? (
         <img 
           src={product.img} 
           alt={product.modelo} 
-          className="w-full h-[135px] object-contain rounded-md"
+          className="product-img"
           onError={handleImageError}
         />
       ) : (
-        <div className="w-full h-[135px] bg-gray-300 rounded-md flex items-center justify-center">
+        <div className="product-img-placeholder">
           <span className="text-xs text-gray-600 text-center">{product.marca}</span>
         </div>
 
         
       )}
-      <p className="text-xs mt-1 truncate">{product.marca}</p>
-      <p className="text-xs mt-1 truncate">{product.modelo}</p>
+      <p className="product-text">{product.marca}</p>
+      <p className="product-text">{product.modelo}</p>
       </Link>
     </div>
   );
