@@ -35,15 +35,15 @@ export default function Cabecera() {
           <Link href="/" className="cabecera__nav-link">
             Inicio
           </Link>
-          <a href="/mision" className="cabecera__nav-link">
+          <Link href="/mision" className="cabecera__nav-link">
             Mision
-          </a>
-          <a href="/nosotros" className="cabecera__nav-link">
+          </Link>
+          <Link href="/nosotros" className="cabecera__nav-link">
             Nosotros
-          </a>
-          <a href="/contacto" className="cabecera__nav-link">
+          </Link>
+          <Link href="/contacto" className="cabecera__nav-link">
             Contacto
-          </a>
+          </Link>
         </nav>
 
         <div className="cabecera__acciones">
