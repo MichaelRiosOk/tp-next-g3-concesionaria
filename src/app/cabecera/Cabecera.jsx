@@ -2,12 +2,14 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import Link from 'next/link';
 import "./cabecera.css";
+import { UsuariosContext } from '../../context/UsuariosContext';
 
 export default function Cabecera() {
   const [isOpen, setIsOpen] = useState(false);
+  const { usuarioActual } = useContext(UsuariosContext);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -45,9 +47,12 @@ export default function Cabecera() {
         </nav>
 
         <div className="cabecera__acciones">
-          <a href="/login" className="cabecera__login">
+          <Link
+            href={usuarioActual ? "/profile" : "/login"}
+            className="cabecera__login"
+          >
             <img src="/img/loginIcono.png" alt="Login" />
-          </a>
+          </Link>
           <div className="cabecera__carrito">
             <FontAwesomeIcon icon={faShoppingCart} />
             <span className="cabecera__carrito-contador">0</span>

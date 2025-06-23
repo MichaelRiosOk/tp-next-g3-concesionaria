@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "email": "juan.perez@mail.com",
+    "password": "123456"
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "García",
+    "email": "ana.garcia@mail.com",
+    "password": "contraseña"
+  },
+  {
+    "nombre": "Luis",
+    "apellido": "Martínez",
+    "email": "luis.martinez@mail.com",
+    "password": "qwerty"
+  },
+  {
+    "nombre": "María",
+    "apellido": "López",
+    "email": "maria.lopez@mail.com",
+    "password": "maria2024"
+  },
+  {
+    "nombre": "Carlos",
+    "apellido": "Fernández",
+    "email": "carlos.fernandez@mail.com",
+    "password": "carlos123"
+  },
+  {
+    "nombre": "Sofía",
+    "apellido": "Gómez",
+    "email": "sofia.gomez@mail.com",
+    "password": "sofia456"
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Sánchez",
+    "email": "pedro.sanchez@mail.com",
+    "password": "pedro789"
+  },
+  {
+    "nombre": "Lucía",
+    "apellido": "Ramírez",
+    "email": "lucia.ramirez@mail.com",
+    "password": "lucia321"
+  }
+]

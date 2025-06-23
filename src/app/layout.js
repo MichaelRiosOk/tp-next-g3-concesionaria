@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AutosProvider } from "../context/AutosContext";
+import { UsuariosProvider } from '../context/UsuariosContext';
 import PieDePagina from "./pie/PieDePagina";
 import Cabecera from "./cabecera/Cabecera";
 
@@ -21,13 +22,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <AutosProvider>
-          <Cabecera />
-          {children}
-          <PieDePagina />
-        </AutosProvider>
+        <UsuariosProvider>
+          <AutosProvider>
+            <Cabecera />
+            {children}
+            <PieDePagina />
+          </AutosProvider>
+        </UsuariosProvider>
       </body>
     </html>
   );

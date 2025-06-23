@@ -1,19 +1,40 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import styles from '../login/login.module.css';
+import { UsuariosContext } from '../../context/UsuariosContext';
 
 export default function Register() {
   const [formData, setFormData] = useState({
-    name: '',
+    nombre: '',
+    apellido: '',
     email: '',
     password: '',
     confirmPassword: ''
   });
+  const [error, setError] = useState('');
+  const { registrar } = useContext(UsuariosContext);
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Register attempt:', formData);
+    if (formData.password !== formData.confirmPassword) {
+      setError('Las contraseñas no coinciden');
+      return;
+    }
+    const nuevoUsuario = {
+      nombre: formData.nombre,
+      apellido: formData.apellido,
+      email: formData.email,
+      password: formData.password
+    };
+    const resultado = registrar(nuevoUsuario);
+    if (resultado.exito) {
+      router.push('/login');
+    } else {
+      setError(resultado.mensaje);
+    }
   };
 
   const handleChange = (e) => {
@@ -32,8 +53,18 @@ export default function Register() {
             <label>Nombre</label>
             <input
               type="text"
-              name="name"
-              value={formData.name}
+              name="nombre"
+              value={formData.nombre}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label>Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              value={formData.apellido}
               onChange={handleChange}
               required
             />
@@ -68,6 +99,7 @@ export default function Register() {
               required
             />
           </div>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
           <button type="submit" className={styles.submitButton}>
             Registrarse
           </button>

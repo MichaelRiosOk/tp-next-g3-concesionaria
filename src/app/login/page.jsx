@@ -1,24 +1,28 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import styles from './login.module.css';
+import { UsuariosContext } from '../../context/UsuariosContext';
 
 export default function Login() {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
-  });
+  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [error, setError] = useState('');
+  const { login } = useContext(UsuariosContext);
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Login attempt:', formData);
+    const user = login(formData.email, formData.password);
+    if (user) {
+      router.push('/');
+    } else {
+      setError('Email o contraseña incorrectos');
+    }
   };
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -46,13 +50,13 @@ export default function Login() {
               required
             />
           </div>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
           <button type="submit" className={styles.submitButton}>
             Ingresar
           </button>
         </form>
         <p className={styles.registerLink}>
-          ¿No tienes cuenta? {' '}
-          <Link href="/register">Regístrate aquí</Link>
+          ¿No tienes cuenta? <Link href="/register">Regístrate aquí</Link>
         </p>
       </div>
     </div>
