@@ -72,6 +72,10 @@
   background-color: #3F5C6D;
 }
 
+.submitButton:disabled:hover {
+  background-color: #9CA3AF;
+}
+
 .registerLink {
   text-align: center;
   margin-top: 1.5rem;
