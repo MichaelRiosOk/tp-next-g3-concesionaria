@@ -1,7 +1,7 @@
 'use client';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useState, useContext } from 'react';
 import Link from 'next/link';
 import "./cabecera.css";
@@ -9,10 +9,15 @@ import { UsuariosContext } from '../../context/UsuariosContext';
 
 export default function Cabecera() {
   const [isOpen, setIsOpen] = useState(false);
-  const { usuarioActual } = useContext(UsuariosContext);
+  const { usuarioActual, logout } = useContext(UsuariosContext);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLogout = () => {
+    logout();
+    setIsOpen(false);
   };
 
   return (
@@ -47,12 +52,23 @@ export default function Cabecera() {
         </nav>
 
         <div className="cabecera__acciones">
-          <Link
-            href={usuarioActual ? "/profile" : "/login"}
-            className="cabecera__login"
-          >
-            <img src="/img/loginIcono.png" alt="Login" />
-          </Link>
+          {usuarioActual ? (
+            <div className="cabecera__user-menu">
+              <div className="cabecera__user-actions">
+                <Link href="/perfil" className="cabecera__user-link">
+                  <FontAwesomeIcon icon={faUser} />
+                  <span>Mi Perfil</span>
+                </Link>
+                <button onClick={handleLogout} className="cabecera__logout-btn">
+                  Cerrar Sesión
+                </button>
+              </div>
+            </div>
+          ) : (
+            <Link href="/login" className="cabecera__login">
+              <img src="/img/loginIcono.png" alt="Login" />
+            </Link>
+          )}
           <div className="cabecera__carrito">
             <FontAwesomeIcon icon={faShoppingCart} />
             <span className="cabecera__carrito-contador">0</span>

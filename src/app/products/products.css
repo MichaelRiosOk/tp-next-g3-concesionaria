@@ -59,6 +59,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
 }
 
 .product-card:hover {
@@ -88,4 +89,67 @@
     font-size: 0.9rem;
     color: #1A3A51;
     margin-top: 0.25rem;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #3F5C6D;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+.favorite-btn:hover {
+    background-color: #3F5C6D;
+    transform: scale(1.1);
+}
+
+.favorite-btn--active {
+    background-color: #DC2626;
+    border-color: #DC2626;
+}
+
+.favorite-btn--active:hover {
+    background-color: #B91C1C;
+    border-color: #B91C1C;
+}
+
+.favorite-btn svg {
+    font-size: 1rem;
+    color: #1A3A51;
+    transition: color 0.3s ease;
+}
+
+.favorite-btn:hover svg {
+    color: white;
+}
+
+.favorite-btn--active svg {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .products-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .favorite-btn {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .favorite-btn svg {
+        font-size: 0.9rem;
+    }
 }
