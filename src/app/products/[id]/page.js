@@ -1,10 +1,15 @@
 "use client";
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, use, useContext } from "react";
 import Link from 'next/link';
+import { UsuariosContext } from '../../../context/UsuariosContext';
+import { useRouter } from "next/navigation";
+
 
 export default function PageDetails({ params }) {
   const { id } = use(params);
   const [product, setProduct] = useState(null);
+  const { usuarioActual } = useContext(UsuariosContext);
+  const router = useRouter();
 
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/MichaelRiosOk/tp-next-g3-concesionaria/refs/heads/develop-mike/public/data/autos_argentina.json")
@@ -14,6 +19,14 @@ export default function PageDetails({ params }) {
       })
       .catch((error) => console.log(error));
   }, []);
+
+    const buttonComprar = () => {
+    if (usuarioActual) {
+      router.push(`/compra/${id}`);
+    } else {
+      router.push("/login");
+    }
+  };
 
   if (!product) {
     return <div className="text-center text-gray-500 mt-10">Cargando datos del auto...</div>;
@@ -39,13 +52,12 @@ export default function PageDetails({ params }) {
       </div>
 
       {/* Botón de comprar */}
-      <Link href={`/compra/${id}`}>
         <button
+        onClick={buttonComprar}
           className="w-full bg-[#1A3A51] text-white py-3 rounded-xl font-semibold text-lg hover:bg-[#3F5C6D] transition duration-300 shadow-md cursor-pointer"
         >
           Comprar
         </button>
-      </Link>
     </div>
   );
 }
