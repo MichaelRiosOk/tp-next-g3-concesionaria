@@ -27,7 +27,9 @@ export default function RootLayout({ children }) {
         <UsuariosProvider>
           <AutosProvider>
             <Cabecera />
-            {children}
+            <main>
+              {children}
+            </main>
             <PieDePagina />
           </AutosProvider>
         </UsuariosProvider>
