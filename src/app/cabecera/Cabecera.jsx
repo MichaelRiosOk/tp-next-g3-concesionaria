@@ -69,10 +69,6 @@ export default function Cabecera() {
               <img src="/img/loginIcono.png" alt="Login" />
             </Link>
           )}
-          <div className="cabecera__carrito">
-            <FontAwesomeIcon icon={faShoppingCart} />
-            <span className="cabecera__carrito-contador">0</span>
-          </div>
         </div>
       </div>
     </header>
