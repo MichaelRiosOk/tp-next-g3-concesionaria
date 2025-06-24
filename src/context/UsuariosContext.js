@@ -7,6 +7,7 @@ export function UsuariosProvider({ children }) {
   const [usuarios, setUsuarios] = useState([]);
   const [usuarioActual, setUsuarioActual] = useState(null);
   const [favoritos, setFavoritos] = useState([]);
+  const [compras, setCompras] = useState([]);
 
   useEffect(() => {
     fetch("/data/usuarios.json")
@@ -15,21 +16,38 @@ export function UsuariosProvider({ children }) {
       .catch(console.error);
   }, []);
 
-  // Cargar favoritos del localStorage al cambiar de usuario
+  // Cargar favoritos y compras del localStorage al cambiar de usuario
   useEffect(() => {
     if (usuarioActual) {
-      // Usar email como identificador único
+      // Favoritos
       const favoritosGuardados = localStorage.getItem(`favoritos_${usuarioActual.email}`);
-      if (favoritosGuardados) {
-        setFavoritos(JSON.parse(favoritosGuardados));
-      } else {
-        setFavoritos([]);
-      }
+      setFavoritos(favoritosGuardados ? JSON.parse(favoritosGuardados) : []);
+      // Compras
+      const comprasGuardadas = localStorage.getItem(`compras_${usuarioActual.email}`);
+      setCompras(comprasGuardadas ? JSON.parse(comprasGuardadas) : []);
     } else {
-      // Si no hay usuario, limpiar favoritos
       setFavoritos([]);
+      setCompras([]);
     }
   }, [usuarioActual]);
+
+  // Guardar compras en localStorage
+  const guardarCompras = (nuevasCompras) => {
+    if (usuarioActual) {
+      localStorage.setItem(`compras_${usuarioActual.email}`, JSON.stringify(nuevasCompras));
+      setCompras(nuevasCompras);
+    }
+  };
+
+  // Agregar auto a compras
+  const agregarCompra = (auto) => {
+    if (!usuarioActual) return false;
+    const yaComprado = compras.find(c => c.id === auto.id);
+    if (yaComprado) return false;
+    const nuevasCompras = [...compras, auto];
+    guardarCompras(nuevasCompras);
+    return true;
+  };
 
   // Guardar favoritos en localStorage
   const guardarFavoritos = (nuevosFavoritos) => {
@@ -87,8 +105,8 @@ export function UsuariosProvider({ children }) {
 
   // Logout usuario
   const logout = () => {
-    // Limpiar favoritos antes de hacer logout
     setFavoritos([]);
+    setCompras([]);
     setUsuarioActual(null);
   };
 
@@ -102,7 +120,9 @@ export function UsuariosProvider({ children }) {
       favoritos,
       agregarFavorito,
       quitarFavorito,
-      esFavorito
+      esFavorito,
+      compras,
+      agregarCompra
     }}>
       {children}
     </UsuariosContext.Provider>

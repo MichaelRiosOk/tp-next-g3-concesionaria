@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 export default function PageDetails({ params }) {
   const { id } = use(params);
   const [product, setProduct] = useState(null);
-  const { usuarioActual } = useContext(UsuariosContext);
+  const { usuarioActual, compras } = useContext(UsuariosContext);
   const router = useRouter();
 
   useEffect(() => {
@@ -20,7 +20,10 @@ export default function PageDetails({ params }) {
       .catch((error) => console.log(error));
   }, []);
 
-    const buttonComprar = () => {
+  // Verifica si el usuario ya compró este auto
+  const yaComprado = compras && compras.some((a) => String(a.id) === String(id));
+
+  const buttonComprar = () => {
     if (usuarioActual) {
       router.push(`/compra/${id}`);
     } else {
@@ -51,13 +54,21 @@ export default function PageDetails({ params }) {
         <p><span className="font-semibold">Precio:</span> {product.precio.toLocaleString()} USD</p>
       </div>
 
-      {/* Botón de comprar */}
+      {/* Botón de comprar solo si NO fue comprado */}
+      {!yaComprado && (
         <button
-        onClick={buttonComprar}
+          onClick={buttonComprar}
           className="w-full bg-[#1A3A51] text-white py-3 rounded-xl font-semibold text-lg hover:bg-[#3F5C6D] transition duration-300 shadow-md cursor-pointer"
         >
           Comprar
         </button>
+      )}
+      {/* Mensaje si ya fue comprado */}
+      {yaComprado && (
+        <div className="text-green-700 font-semibold text-center mt-4">
+          Ya compraste este auto.
+        </div>
+      )}
     </div>
   );
 }

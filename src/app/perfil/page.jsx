@@ -6,7 +6,7 @@ import { UsuariosContext } from '../../context/UsuariosContext';
 import './perfil.css';
 
 export default function Perfil() {
-  const { usuarioActual, favoritos, quitarFavorito } = useContext(UsuariosContext);
+  const { usuarioActual, favoritos, quitarFavorito, compras } = useContext(UsuariosContext);
   const router = useRouter();
 
   // Usar useEffect para la redirección
@@ -94,6 +94,38 @@ export default function Perfil() {
         </div>
 
         <div className="perfil-section">
+          <h2>Mis Compras ({compras.length})</h2>
+          {compras.length === 0 ? (
+            <div className="favoritos-vacio">
+              <p>No has realizado compras aún.</p>
+            </div>
+          ) : (
+            <div className="favoritos-grid">
+              {compras.map((auto) => (
+                <div key={auto.id} className="favorito-card">
+                  <Link href={`/products/${auto.id}`}>
+                    <img src={auto.img} alt={auto.modelo} className="favorito-img" />
+                    <div className="favorito-info">
+                      <h4>{auto.marca}</h4>
+                      <p>{auto.modelo}</p>
+                      <p className="favorito-precio">${auto.precio?.toLocaleString() || 'Consultar'}</p>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {compras.length === 0 && (
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <Link href="/products" className="favoritos-explorar">
+              Explorar Autos
+            </Link>
+          </div>
+        )}
+
+        <div className="perfil-section">
           <h2>Acciones Rápidas</h2>
           <div className="quick-actions">
             <Link href="/products" className="action-button">
@@ -107,4 +139,4 @@ export default function Perfil() {
       </div>
     </div>
   );
-} 
+}
