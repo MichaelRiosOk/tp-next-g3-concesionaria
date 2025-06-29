@@ -27,7 +27,7 @@ export default function PageDetails({ params }) {
     if (usuarioActual) {
       router.push(`/compra/${id}`);
     } else {
-      router.push("/login");
+      router.push(`/login?redirect=/products/${id}`);
     }
   };
 

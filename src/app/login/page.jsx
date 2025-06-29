@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useContext } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import styles from './login.module.css';
 import { UsuariosContext } from '../../context/UsuariosContext';
 
@@ -10,12 +10,14 @@ export default function Login() {
   const [error, setError] = useState('');
   const { login } = useContext(UsuariosContext);
   const router = useRouter();
+  const params = useSearchParams();
+  const redirect = params.get('redirect');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const user = login(formData.email, formData.password);
     if (user) {
-      router.push('/');
+      router.push(redirect || '/');
     } else {
       setError('Email o contraseña incorrectos');
     }
@@ -56,7 +58,7 @@ export default function Login() {
           </button>
         </form>
         <p className={styles.registerLink}>
-          ¿No tienes cuenta? <Link href="/register">Regístrate aquí</Link>
+          ¿No tienes cuenta? <Link href={`/register?redirect=${redirect || '/'}`}>Regístrate aquí</Link>
         </p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useContext } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import styles from '../login/login.module.css';
 import { UsuariosContext } from '../../context/UsuariosContext';
 
@@ -16,6 +16,8 @@ export default function Register() {
   const [error, setError] = useState('');
   const { registrar } = useContext(UsuariosContext);
   const router = useRouter();
+  const params = useSearchParams();
+  const redirect = params.get('redirect');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,7 +33,7 @@ export default function Register() {
     };
     const resultado = registrar(nuevoUsuario);
     if (resultado.exito) {
-      router.push('/login');
+      router.push(`/login?redirect=${redirect}`);
     } else {
       setError(resultado.mensaje);
     }
