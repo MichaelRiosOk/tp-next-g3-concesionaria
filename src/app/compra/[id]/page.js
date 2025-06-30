@@ -11,7 +11,7 @@ export default function PageCompra({ params }) {
     const [car, setCar] = useState(null);
     const [comprado, setComprado] = useState(false);
 
-    const { id } = use(params); // ✅ usa React.use() para resolver la Promise
+    const { id } = use(params);
 
     useEffect(() => {
         const autoEncontrado = autos.find((a) => a.id == id);
